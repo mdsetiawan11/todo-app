@@ -31,7 +31,7 @@ export function SidebarNavigation({ children }: { children: React.ReactNode }) {
       ),
     },
   ];
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   return (
     <div
       className={cn(
@@ -39,7 +39,7 @@ export function SidebarNavigation({ children }: { children: React.ReactNode }) {
         "h-screen"
       )}
     >
-      <Sidebar open={open} setOpen={setOpen} animate={false}>
+      <Sidebar open={open} animate={false}>
         <SidebarBody className="justify-between gap-10">
           <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
             {open ? <Logo /> : <LogoIcon />}
@@ -65,7 +65,7 @@ export const Logo = () => {
     >
       <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm flex-shrink-0" />
       <motion.span
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
         className="font-medium text-black dark:text-white whitespace-pre"
       >

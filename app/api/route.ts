@@ -1,4 +1,5 @@
 
+
 import { ITask } from "./type";
 
 const baseUrl = "http://localhost:3001";
@@ -37,4 +38,47 @@ export const deleteTodo = async (id: string): Promise<void> => {
     await fetch(`${baseUrl}/tasks/${id}`, {
         method: 'DELETE',
     })
+}
+
+export const getTasksCount = async (): Promise<number> => {
+    const res = await fetch(`${baseUrl}/tasks `)
+    const todos = await res.json()
+    const tasksCount = todos.length;
+    return tasksCount;
+}
+
+export const getTasksCountNew = async (): Promise<number> => {
+    const res = await fetch(`${baseUrl}/tasks`)
+    const todos = await res.json()
+
+    // Filter tasks dengan status 'new'
+    const newTasks = todos.filter((task: ITask) => task.status === 'new')
+
+    // Menghitung jumlah tasks dengan status 'new'
+    const tasksCount = newTasks.length;
+    return tasksCount;
+}
+
+export const getTasksCountProgress = async (): Promise<number> => {
+    const res = await fetch(`${baseUrl}/tasks`)
+    const todos = await res.json()
+
+    // Filter tasks dengan status 'new'
+    const newTasks = todos.filter((task: ITask) => task.status === 'progress')
+
+    // Menghitung jumlah tasks dengan status 'new'
+    const tasksCount = newTasks.length;
+    return tasksCount;
+}
+
+export const getTasksCountDone = async (): Promise<number> => {
+    const res = await fetch(`${baseUrl}/tasks`)
+    const todos = await res.json()
+
+    // Filter tasks dengan status 'new'
+    const newTasks = todos.filter((task: ITask) => task.status === 'done')
+
+    // Menghitung jumlah tasks dengan status 'new'
+    const tasksCount = newTasks.length;
+    return tasksCount;
 }
