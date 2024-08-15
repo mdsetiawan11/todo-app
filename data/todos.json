@@ -1,9 +1,22 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "task": "Hari ini mengerjakan sesuatu yang sangat sulit dikerjakan",
-      "status": "in-progress"
+      "id": "7dc08048-9639-452b-b614-51edc1e7447a",
+      "task": "tesss3344",
+      "status": "new",
+      "date": "2024-08-15T01:55:43.792Z"
+    },
+    {
+      "id": "d0ee39fe-75cc-4709-8322-77d2bd46835d",
+      "task": "tes tanggal",
+      "status": "new",
+      "date": "2024-08-15T00:38:07.529Z"
+    },
+    {
+      "id": "059c2b09-59a5-4fba-8201-fdbba18ba119",
+      "task": "tess2123",
+      "status": "done",
+      "date": "2024-08-15T01:46:16.666Z"
     }
   ]
 }
