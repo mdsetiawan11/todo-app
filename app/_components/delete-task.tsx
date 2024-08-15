@@ -18,6 +18,7 @@ import { addTodo, deleteTodo, editTodo } from "../api/route";
 import { ITask } from "../api/type";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { DialogDescription } from "@radix-ui/react-dialog";
+import { toast } from "sonner";
 
 interface DeleteTaskProps {
   onTaskDeleted: () => void;
@@ -39,6 +40,7 @@ const DeleteTask: React.FC<DeleteTaskProps> = ({ onTaskDeleted, id }) => {
 
       // Reset the task input
       setId("");
+      toast("Task has been deleted", { duration: 500 });
     } catch (error) {
       console.error("Failed to delete task:", error);
     }

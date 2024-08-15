@@ -1,34 +1,16 @@
 {
   "tasks": [
     {
-      "id": "7dc08048-9639-452b-b614-51edc1e7447a",
-      "task": "tesss3344",
+      "id": "5758b500-611f-4bfc-a6aa-77a0d93ced2b",
+      "task": "Melakukan sesuatu yang sangat berfaedah",
       "status": "new",
-      "date": "2024-08-15T01:55:43.792Z"
+      "date": "2024-08-15T03:44:05.371Z"
     },
     {
-      "id": "d0ee39fe-75cc-4709-8322-77d2bd46835d",
-      "task": "tes tanggal",
-      "status": "progress",
-      "date": "2024-08-15T00:38:07.529Z"
-    },
-    {
-      "id": "4ff707d1-37c0-4767-967d-fd69a030eae4",
-      "task": "tess",
+      "id": "be550050-2d22-42e7-a51b-8e7d668827c6",
+      "task": "tes",
       "status": "new",
-      "date": "2024-08-15T03:27:01.873Z"
-    },
-    {
-      "id": "ac4a8dd5-a206-4ca6-98d6-b2d8e10be4f9",
-      "task": "tesss22",
-      "status": "new",
-      "date": "2024-08-15T03:27:05.114Z"
-    },
-    {
-      "id": "7387311a-c3ee-4023-8e02-8b7ae5e113b3",
-      "task": "tewews",
-      "status": "new",
-      "date": "2024-08-15T03:27:07.663Z"
+      "date": "2024-08-15T03:56:08.902Z"
     }
   ]
 }

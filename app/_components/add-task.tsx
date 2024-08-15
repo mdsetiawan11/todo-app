@@ -16,6 +16,7 @@ import { ButtonMovingBorder } from "@/components/ui/moving-border";
 import { Plus } from "lucide-react";
 import { addTodo } from "../api/route";
 import { ITask } from "../api/type";
+import { toast } from "sonner";
 
 interface AddTaskProps {
   onTaskAdded: () => void;
@@ -46,6 +47,8 @@ const AddTask: React.FC<AddTaskProps> = ({ onTaskAdded }) => {
 
         // Reset the task input
         setTask("");
+
+        toast("Task has been created");
       }
     } catch (error) {
       console.error("Failed to add task:", error);
@@ -79,6 +82,7 @@ const AddTask: React.FC<AddTaskProps> = ({ onTaskAdded }) => {
                 className="col-span-3"
                 value={task}
                 onChange={(e) => setTask(e.target.value)}
+                required
               />
             </div>
           </div>

@@ -17,6 +17,7 @@ import { Edit, Plus } from "lucide-react";
 import { addTodo, editTodo } from "../api/route";
 import { ITask } from "../api/type";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { toast } from "sonner";
 
 interface EditTaskProps {
   onTaskEdited: () => void;
@@ -59,6 +60,7 @@ const EditTask: React.FC<EditTaskProps> = ({
 
         // Reset the task input
         setTask("");
+        toast("Task has been updated");
       }
     } catch (error) {
       console.error("Failed to add task:", error);

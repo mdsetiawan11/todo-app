@@ -18,9 +18,9 @@ import {
   getTasksCount,
   getTasksCountDone,
   getTasksCountNew,
+  getTasksCountProgress,
 } from "../api/route";
 import { CardStack } from "@/components/ui/card-stack";
-import { ITask } from "../api/type";
 import { cn } from "@/lib/utils";
 import Moment from "moment";
 
@@ -70,7 +70,7 @@ export default function Dashboard() {
   };
 
   const fetchTasksCountProgress = async () => {
-    const progresstasks = await getTasksCountNew();
+    const progresstasks = await getTasksCountProgress();
     setTasksCountProgress(progresstasks);
   };
 
@@ -91,7 +91,7 @@ export default function Dashboard() {
     <div className="w-full h-full bg-gray-200 p-6">
       <ButtonMovingBorder
         borderRadius="0.5rem"
-        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 font-bold"
       >
         Dashboard
       </ButtonMovingBorder>
@@ -137,7 +137,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <CardStack items={Cards2} />
+      {/* <CardStack items={Cards2} /> */}
     </div>
   );
 }

@@ -24,7 +24,7 @@ export default function Todo() {
       <div className="flex flex-row justify-between">
         <ButtonMovingBorder
           borderRadius="0.5rem"
-          className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+          className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 font-bold"
         >
           Todo
         </ButtonMovingBorder>
